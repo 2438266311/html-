@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iframe和a标签的使用</title>
+    <style>
+    iframe{
+        width:100%;   /*--用css标注iframe的宽高--*/
+        height:400px;
+    }
+    </style>
+</head>
+<body>
+    <iframe name=page src="./iframe.html" frameborder="0"></iframe>
+    <!--iframe标签 src在指定位置打开-->
+    <a target=page href="http://qq.com">QQ</a>
+    <!--a标签在iframe里打开qq.com-->
+    <a target=page href="http://baidu.com">百度</a>
+    <!--a标签在iframe里打开baidu.com-->
+</body>
+</html>
