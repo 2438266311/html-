@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form标签的使用</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <!--form标签也是跳转页面但发起的是post请求,
+        需要用method="post"不然还是默认get请求
+        form一样有target和a标签行为一样-->
+        <input type="text" name="username">
+        <input type="text" name="password">
+        <!--用两个input附加帐户名和密码字段-->
+        <input type="submit" value="提交">
+        <!--form表单里必须有提交按钮-->
+    </form>
+</body>
+</html>
