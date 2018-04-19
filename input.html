@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html zh-Hans>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input标签的使用</title>
+</head>
+<body>
+    <form action="users" method=post target="bbb">
+        <h1>你的个人信息</h1>
+        <label>用户名<input type="text" name="username"></label>
+        <!--可以用label将input包起来来达成同样的效果 一定要加name，不然服务器不承认-->
+        <input type="checkbox" name="male">男
+        <!--type="checkbox"用于做出打勾选项-->
+        <input type="checkbox" id="xxx" name="female"><label for="xxx">女</label>
+        <!--用label可以点击“女”时选上勾-->
+       
+
+        <h2>喜欢的水果</h2>
+        <label><input type="checkbox" name="fruit" value="orange">橘子</label>
+        <label><input type="checkbox" name="fruit" value="apple">苹果</label>
+
+        <h2>是否喜欢看电影</h2>
+        <label><input type="radio" name="movie" value="yes">是</label>
+        <label><input type="radio" name="movie" value="no">否</label>
+        <!--radio是小圆圈选项，两个radio中有同一个name时，服务器会只允许选择一个-->
+
+        <h2>分组</h2>
+        <select name="group" multiple>
+            <!--select下拉列表,multiple属性可以多选-->
+            <option value="">-</option>
+            <!--没有组-->
+            <option value="1">第一组</option>
+            <option value="2">第二组</option>
+            <option value="3" disabled>第三组</option>
+            <!--disabled表示不让选-->
+            <option value="4" selected>第四组</option>
+            <!--selected表示默认选第四组-->
+        </select>
+
+        <h2>其他爱好</h2>
+        <textarea style="resize:none; width:400px; height:200px;" name="爱好" cols="30" rows="10">请写一下你的个人爱好！</textarea>
+        <!--textarea可以输入大量信息，通过css让他固定大小-->
+
+        <h2><input type="submit" value="button"></h2>
+    </form>
+</body>
+</html>
