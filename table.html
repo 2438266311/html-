@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html zh-Hans>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table标签的使用方法</title>
+</head>
+<body>
+    <table border="1">
+        <colgroup>
+            <col bgcolor=red width=100>
+            <col bgcolor=yellow width=150>
+            <col bgcolor=red width=100>
+            <col bgcolor=yellow width=70>
+            <!--colgroup必须和col一起用，用来控制每一行的宽度,bgcolor=red，表示将此列列变为红色-->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>项目</th><th>姓名</th> <th>班级</th> <th>分数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th> <td>小明</td> <td>2</td> <td>94</td>
+            </tr>
+            <tr>
+                <th></th> <td>小红</td> <td>2</td> <td>96</td>
+            </tr>
+            <tr>
+                <th>平均分</th> <td>/</td> <td>/</td> <td>95</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总分</td> <td>/</td> <td>/</td> <td>190</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
